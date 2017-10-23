@@ -1,0 +1,19 @@
+.contact-component, .list-group-item {
+  transition: 0.2s ease;
+}
+
+.list-group-item.active .contact-component {
+  color: white;
+}
+
+.list-group-item.active .contact-component:before {
+  content: '';
+  border: 1em solid #347bb7;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  right: -2em;
+  top: 2em;
+  animation: fadeInLeft 0.2s linear;
+}
